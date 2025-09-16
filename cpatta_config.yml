@@ -1,0 +1,48 @@
+atta:
+  alg_name: CPATTA_NexCRC
+  dss_k_value: 3 # hyperparameter for DSS
+  oracle_num_new_domain: 10 # number of oracle samples if we enter a new domain
+  oracle_num_per_batch: 3 # number of oracle samples per batch
+  pseudo_num_per_batch: 5 # number of pseudo samples per batch
+  smooth_topK_avg: 1 # top K average for smoothing
+  use_smooth: true
+cp:
+  T: 1
+  alpha: 0.2 # miscoverage rate
+  cp_name: DescentFasterNexCRC
+  loss_func_name: coverage_loss
+  loss_func_upper_bound: 1
+  num_steps: 10000
+  use_const_weight: false
+  use_cos_similarity: false
+  use_dss: false
+  use_pseudo_coverage: true
+  use_time_series: false
+dataset:
+  batch_size: 100
+  num_classes: 7 # number of classes
+  num_of_cal_data_per_class: 50 # number of calibration data per class
+  num_workers: 8
+  path: /root/autodl-tmp # path to store datasets
+  name: PACS 
+device: cuda:0
+model:
+  dropout_rate: 0
+  freeze_bn: true
+  input_shape:
+  - 3
+  - 244
+  - 244
+  name: ResNet
+  path: /root/autodl-fs/CP-ATTA/ckpt # path to pretrained models
+  resnet18: true
+  type: partialsource
+seed: 120
+train:
+  batch_size: 16
+  cold_start: 100
+  lr: 0.0001
+  method: separate
+  oracle_lr: 0.001  # learning rate for oracle samples
+  pseudo_lr: 0.0001 # learning rate for pseudo samples
+  stop_tol: 5
