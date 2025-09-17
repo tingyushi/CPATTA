@@ -29,4 +29,4 @@ CPATTA works as the following:
 * ``cpatta_config.yml``: An example config file for CPATTA algorithm
 * ``data_config.yml``: An example config file for loading dataset
 * ``runner.py``: A driver file for running the algorithm
-* The core CPATTA algorithm is [here](./cp_atta_package/atta_alg)
+* The core CPATTA algorithm is [here](./cp_atta_package/atta_algs)
