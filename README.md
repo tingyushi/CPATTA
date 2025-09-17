@@ -11,7 +11,7 @@
 
 CPATTA works as the following:  
 * The real-time model $f(\cdot ; \theta)$ makes the predictions right away when an online batch of data arrives. 
-* If CPATTA detects that current batch's domain is different from the previous batch's domain($\mathcal{D}_t \neq \mathcal{D}_{t-1}$), the algorithm selects more data for human annotation to ensure the real-time performance. 
+* If CPATTA detects that current batch's domain is different from the previous batch's domain($$\mathcal{D}_t \neq \mathcal{D}_{t-1}$$), the algorithm selects more data for human annotation to ensure the real-time performance. 
 * Two CPs provide uncertainty measures for each sample within the batch; human annotates uncertain samples while the model annotates certain samples. 
 * Then, CPATTA updates the weights of two CPs based on the pseudo coverages calculated from model predictions and prediction sets.
 
