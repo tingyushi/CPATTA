@@ -1,6 +1,9 @@
 # Active Test-Time Adaptation with Conformal Prediction
 
 ### Description
+
+![CPATTA Method](images/schematic_diagram.png)
+
 **C**onformal **P**rediction **A**ctive **TTA** (CPATTA), a framework that integrates CP into ATTA. The core idea is to replace heuristic uncertainty measures with principled, coverage-guaranteed ones, and to adapt them to dynamic test-time environments. Specifically, CPATTA introduces three key components.
 * CPATTA employs smoothed conformal scores and a top-K certainty measure to provide fine-grained uncertainty signals, enabling more efficient allocation of scarce human annotations and reliable pseudo-labeling.
 * CPATTA develops an online weight-update algorithm that leverages pseudo coverage as feedback to dynamically correct coverage under domain shifts, ensuring that uncertainty estimates remain calibrated to the user-chosen risk level. 
