@@ -18,7 +18,7 @@ CPATTA works as the following:
 
 ### Datasets
 * Please prepare PACS, VLCS, and Tiny-ImageNet-C. 
-* You can download 3 datasets here [https://pan.baidu.com/s/10krX1S36XwM2Ix2vJdNWoQ?pwd=bvd3](https://pan.baidu.com/s/10krX1S36XwM2Ix2vJdNWoQ?pwd=bvd3).
+* You can download 3 datasets here [https://drive.google.com/drive/folders/11DAHd9w7vu-j-QN2I9tUgMnsgcgnZE1D?usp=sharing](https://drive.google.com/drive/folders/11DAHd9w7vu-j-QN2I9tUgMnsgcgnZE1D?usp=sharing).
 
 ### Requirements
 * Python: 3.11.6
